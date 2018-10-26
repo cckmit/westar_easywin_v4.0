@@ -1,0 +1,181 @@
+﻿﻿@charset "utf-8";
+body{
+	background: #fff;
+}
+/**基本**/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	font-size: 12px;
+	cursor: pointer;
+	color: #007CD2;
+	text-decoration: none;
+}
+
+a:HOVER {
+	color: #ff6633;
+}
+
+a.non-a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.non-a:HOVER {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*会议申请*/
+.dhx_matrix_scell{background:#2f93d9 url(images/glossy/dhx_cal_titlebg.gif) no-repeat;color:#fff;}
+.dhx_matrix_scell a{color:#fff;}
+/*纵向选项卡*/
+.col_tab{background:#f8f8f8;}
+.col_tab li.current a,.col_tab li.current a:hover{background:#50a0cf;}
+.col_tab li.current a{color:#000;}
+.col_tab li.current a{color:#fff;}
+.col_tab li a:hover{display:block;background:#c4e4f7;}
+
+/*图形化会议室申请*/
+.dhx_matrix_cell,.dhx_matrix_scell {
+	overflow: hidden;
+	text-align: left;
+	vertical-align: middle;
+	border-left: 1px solid #d6d6d6;
+	/*border-bottom: 1px solid #d6d6d6;
+	
+	padding-left:20px;*/
+}
+.dhx_matrix_scell_title{
+	border-bottom: 1px solid #6d9bac;
+	border-top: 1px solid #6d9bac;
+	text-align: left;
+	line-height:44px;
+	}
+.dhx_matrix_scell_title img{
+	margin-bottom:-4px;
+	}
+.dhx_matrix_cell {
+	background:url(images/glossy/dhx_matrix_cell_bg.gif) repeat-x;
+}
+.dhx_matrix_cell div{
+	border:1px solid #fff;
+	height:40px;
+	}
+.dhx_cal_header {
+	background-image: url(images/glossy/top-days-bg.gif);
+	background-repeat: repeat-x;
+	border-top: 0;
+	border-right: 0;
+}
+.dhx_scale_bar {
+	background-image: url(images/glossy/top-separator.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding-top: 3px;
+	border-left: 0;
+}
+.dhx_cal_navline {
+	background-color: #e7f3f7;
+	height: 32px !important;
+	border:1px solid #fff;
+	border-left:none;
+	border-right:none;
+}
+.dhx_cal_prev_button {
+	background: url(images/glossy/buttons.gif);
+	width: 30px;
+	height: 20px;
+	margin-left:10px;
+}
+
+.dhx_cal_next_button {
+	background: url(images/glossy/buttons.gif) -31px 0;
+	width: 30px;
+	height: 20px;
+	left:188px;
+}
+
+.dhx_cal_today_button {
+	padding-top: 3px;
+	background: url(images/glossy/buttons.gif);
+	width: 67px;
+	left: 110px;
+	text-decoration: none;
+}
+.dhx_cal_navline div.dhx_minical_icon {
+	width: 25px;
+	height: 22px;
+	left: 158px;
+	top: 2px;
+	cursor: pointer;
+	background-image: url(images/glossy/calendar.gif);
+}
+.dhx_cal_event_line,.dhx_cal_event_line1,.dhx_cal_event_line2{
+	background: url(/static/plugins/timeLine/dhx_cal_event_line_bg.gif) repeat-x;
+	margin-left:2px;
+	height:20px;
+	border:none;
+	border-radius: 3px;
+	font-family: Tahoma;
+	font-size: 8pt;
+	height: 13px;
+	padding-left: 10px;
+	color: #887A2E;
+	cursor: pointer;
+	overflow: hidden;
+}
+.dhx_cal_event_line1{
+	background: url(/static/plugins/timeLine/dhx_cal_event_line1_bg.gif) repeat-x;
+}
+.dhx_cal_event_line2{
+	background: url(/static/plugins/timeLine/dhx_cal_event_line2_bg.gif) repeat-x;
+}
+.dhx_cal_event_line a,.dhx_cal_event_line1 a,.dhx_cal_event_line2 a{
+	color:#000;
+	}
+.dhx_cal_event_line a:hover,.dhx_cal_event_line1 a:hover,.dhx_cal_event_line1 a:hover{
+color:#fff;
+}
+.dhx_in_move {
+	background: url(/static/plugins/timeLine/dhx_cal_event_line_bg_move.gif) repeat-x;
+}
+.dhtmlXTooltip.tooltip {
+	-moz-box-shadow: 3px 3px 3px #888;
+	-webkit-box-shadow: 3px 3px 3px #888;
+	-o-box-shadow: 3px 3px 3px #888;
+	box-shadow: 3px 3px 3px #888;
+	filter: progid : DXImageTransform.Microsoft.Shadow ( color = '#888888',
+		Direction = 135, Strength = 5 );
+	background:url(/static/plugins/timeLine/tooltip.gif) repeat-x;
+	border-left: 1px solid #acabab;
+	border-top: 1px solid #acabab;
+	color: #000;
+	cursor: default;
+	padding: 10px;
+	position: absolute;
+	z-index: 500;
+	border-radius:3px 3px 3px 3px;
+}
+.remove_mtroom{
+	display:block;
+	width:20px;
+	height:19px;
+	text-indent:-1000px;
+	}
+.dhx_cal_event_line:hover a.remove_mtroom,.dhx_cal_event_line1:hover a.remove_mtroom,.dhx_cal_event_line2 a.remove_mtroom{
+	/* background:url(/static/plugins/timeLine/remove_mtroom.png) no-repeat;*/
+	}
+a.remove_mtroom:hover{
+	background:url(/static/plugins/timeLine/remove_mtroom.png) no-repeat;
+	}
+.dhx_after .dhx_month_head,.dhx_before .dhx_month_head {
+	background: #E2E3E6;
+	color: #94A6BB;
+}
+
+

@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+body,html{
+    width: 100%;
+    min-width: 1300px;
+    overflow: hidden;
+    overflow-x:auto;
+}
+/*头部*/
+.header{
+    width: 100%;
+    height: 50px;
+    background:#1c2d42;
+    color:#fff;
+}
+
+/*主体内容*/
+/**todo 左侧自适应**/
+.form-self{
+    margin-left: -1100px;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-left{
+    margin-left: 1100px;
+    height: auto;
+}
+.form-left-pd{
+    padding: 0px 5px 0px 5px;
+}
+.form-style li{
+    width: 25%;
+}
+
+
+/**todo 右侧固定**/
+.form-fixed{
+    width: 1090px;
+    height: auto;
+    float: right;
+    margin-top: 20px;
+}
+.form-fixed-pd{
+    padding: 0px 5px 0px 5px;
+}
+.form-plug{
+    width: 790px;
+    background: #fff;
+    margin-right: 10px;
+}
+.form-redact{
+    width: 280px;
+}
+.form-input{
+    width: 10%;
+}
+.form-write{
+    width: 60%;
+}
+.form-iconic{
+    width: 30%;
+}
+.form-write input{
+    height: 18px;
+}
+.form-input-rel{
+    position: relative;
+    top: 2px;
+}
+.fa-form-icon{
+    cursor: pointer;
+    font-size: 14px;
+    color: #3f4346;
+}
+.fa-form-icon:hover{
+    color: #5ba8d4;
+}
+.fa-form-delet:hover{
+    color: #e43434;
+}
+.form-add{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px dashed #aaacad;
+    color: #5ba8d4;
+}
+@media screen and (max-width: 1400px){
+    .form-style li{width: 33.3%;}
+}
+
+@media screen and (max-width: 1320px){
+    .form-style li{width: 50%;}
+}

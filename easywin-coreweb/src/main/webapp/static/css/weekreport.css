@@ -1,0 +1,230 @@
+/*团队模板*/
+.teamLevDetail{
+	clear:both;
+	float:left;
+	background-color: #E0EEEE;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-radius:4px;
+	line-height: 25px;
+	width: 90%;
+	font-size: 15px;
+}
+.teamLevDetail .teamLevContent{
+float:left;width:78%;padding-top: 5px;padding-bottom: 5px;
+}
+.teamLevDetail .teamLevContent span{
+font-size: 15px
+}
+.teamLevDetail .teamLevContent input{
+color: #000
+}
+.teamLevDetail .teamLevUpdate{
+float:right;display:none;width: 190px;padding-top: 5px;
+}
+.teamLevDetail .teamLevShow{
+float:right;display:none;width: 190px;padding-top: 5px;
+}
+.teamLevDetail .teamLevSave{
+float:right;display:none;width: 190px;padding-top: 10px;
+}
+
+/*团队添加行*/
+.addTeamLev{
+	clear:both;
+	float:left;
+	background-color: #E0EEEE;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-radius:4px;
+	line-height: 25px;
+	width: 90%;
+	font-size: 15px;
+}
+.addTeamLev .teamContent{
+	float:left;width:78%;padding-top: 5px;padding-bottom: 5px;
+}
+.addTeamLev .teamContent input{
+	color: #000
+}
+.addTeamLev .teamOpt{
+	float:right;width: 190px;padding-top: 10px;
+}
+.addTeamLevContent{
+	clear:both;padding-left: 10px;padding-top: 5px
+}
+/*部门模板样式*/
+.groupLevDetail{
+	clear:both;
+	float:left;
+	background-color: #E0EEEE;
+	border-radius:4px;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding-left: 5px;
+	width: 90%;
+	font-size: 15px;
+}
+.groupLevDetail .groupLevContent{
+	float:left;width:78%;padding-top: 10px;padding-bottom: 5px;
+}
+.groupLevDetail .groupLevContent .groupLevBody{
+	clear:both;
+}
+.groupLevDetail .groupLevContent .groupLevBody input{
+	color: #000;
+}
+.groupLevDetail .groupLevContent .depLevTxt{
+	font-size: 15px;
+}
+
+.groupLevDetail .groupLevContent .groupLevDep{
+	clear:both;
+}
+.groupLevDetail .groupLevContent .groupLevDepRemove{
+	float:left;
+}
+.groupLevDetail .groupLevContent .groupLevDepRemove span{
+	float:left;
+	margin-left:3px;
+	background-color:#ffffff;
+	cursor: pointer;
+	border-radius:4px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.groupLevDetail .groupLevUpdate{
+float:right;display:none;width: 190px;padding-top: 20px;
+}
+.groupLevDetail .groupLevShow{
+float:right;display:none;width: 190px;padding-top: 20px;
+}
+.groupLevDetail .groupLevSave{
+float:right;display:none;width: 190px;padding-top: 20px;
+}
+
+/*部门添加行*/
+.addGroupLev{
+	clear:both;
+	float:left;
+	background-color: #E0EEEE;
+	border-radius:4px;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding-left: 5px;
+	width: 90%;
+	font-size: 15px;
+}
+.addGroupLev .groupContent{
+	margin-left: 10px;padding-top: 10px;float:left;width: 80%;
+}
+.addGroupLev .groupContent .depBody{
+	clear:both;
+}
+.addGroupLev .groupContent .depBody input{
+	color: #000
+}
+
+.addGroupLev .groupContent .selectDep{
+	clear:both;
+}
+.addGroupLev .selectDep .depMorelistRemove{
+	float:left;
+}
+.addGroupLev .selectDep .depMorelistRemove span{
+	float:left;
+	margin-left:3px;
+	background-color:#ffffff;
+	cursor: pointer;
+	border-radius:4px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.addGroupLev .groupOpt{
+	float:right;width: 100px;margin-top:13px;
+}
+.addGroupLevContent{
+	clear:both;padding-left: 10px;padding-top: 10px
+}
+
+/*成员模板样式*/
+.memberLevDetail{
+	clear:both;
+	float:left;
+	background-color: #E0EEEE;
+	border-radius:4px;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding-left: 5px;
+	width: 90%;
+	font-size: 15px;
+}
+.memberLevDetail .memberLevContent{
+float:left;width:78%;padding-top: 10px;padding-bottom: 5px;
+}
+.memberLevDetail .memberLevContent .memberLevTxt{
+	font-size: 15px
+}
+.memberLevDetail .memberLevContent .memberLevPic{
+	clear:both;float:left;margin-top: 5px
+}
+.memberLevDetail .memberLevContent .memberLevPic img{
+	width:28px;height:28px;border:1px solid#dedede;border-radius: 3px;
+}
+.memberLevDetail .memberLevContent .memberLevTxt input{
+	color: #000
+}
+.memberLevDetail .memberLevUpdate{
+float:right;display:none;width: 190px;padding-top: 20px;
+}
+.memberLevDetail .memberLevShow{
+float:right;display:none;width: 190px;padding-top: 20px;
+}
+.memberLevDetail .memberLevSave{
+float:right;display:none;width: 190px;padding-top: 20px;
+}
+
+
+/*成员添加行*/
+.addMemberLev{
+	clear:both;
+	float:left;
+	background-color: #E0EEEE;
+	border-radius:4px;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding-left: 5px;
+	width: 90%;
+	font-size: 15px;
+}
+.addMemberLev .memberContent{
+	float:left;width:80%;padding-top: 10px;padding-bottom: 5px;
+}
+.addMemberLev .memberContent .memberBody{
+	clear: both;
+}
+.addMemberLev .memberContent .memberBody input{
+	color: #000
+}
+
+.addMemberLev .memberContent .memberPic{
+	clear:both;float:left;margin-top: 5px
+}
+
+.memberPic img{
+	width:28px;height:28px;border:1px solid#dedede;border-radius: 3px;
+}
+
+.addMemberLev .memberOpt{
+	float:right;width: 100px;margin-top:13px;
+}
+.addMemberLevContent{
+	clear:both;padding-left: 10px;padding-top: 10px
+}
+
+.zbmember-Name{
+	font-style: normal;font-size:10px;bottom:0;right:-30px;
+}

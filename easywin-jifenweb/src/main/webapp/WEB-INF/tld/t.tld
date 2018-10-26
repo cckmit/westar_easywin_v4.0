@@ -1,0 +1,36 @@
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+  "http://java.sun.com/j2ee/dtds/web-jsptaglib_1_1.dtd">
+
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>my</shortname>
+	<tag>
+		<name>tabItem</name>
+		<tagclass>com.westar.core.tags.TabItem</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<info>pager tag provide the frame of the page divider</info>
+		<attribute>
+			<name>show</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>childTabItem</name>
+		<tagclass>com.westar.core.tags.ChildTabItem</tagclass>
+		<bodycontent>jsp</bodycontent>
+		<info>pager tag provide the frame of the page divider</info>
+		<attribute>
+			<name>title</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>click</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

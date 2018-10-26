@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:oxm="http://www.springframework.org/schema/oxm"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-4.0.xsd "> 
+    
+   
+    <bean id="xstreamMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller">
+		<property name="autodetectAnnotations" value="true"></property>
+		<!-- 设置类名别名 -->
+		<property name="aliases">
+			<map>
+				 
+			</map>
+		</property>
+		<!-- 设置基本属性别名 -->
+		<property name="fieldAliases">
+			<map>
+				
+			</map>
+		</property>
+	</bean>
+    
+</beans>
+  

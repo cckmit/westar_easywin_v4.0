@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link href='../fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../lib/jquery.js'></script>
+<script src='../lib/jquery.min.js'></script>
+<script src='../lib/jquery-ui.custom.min.js'></script>
+<script src='../fullcalendar/fullcalendar.js'></script>
+<script type="text/javascript">
+	/** 当天信息初始化 **/
+	$(function(){
+		var dayDate = new Date();
+		var d = $.fullCalendar.formatDate(dayDate,"dddd");
+		var m = $.fullCalendar.formatDate(dayDate,"yyyy-MM-dd");
+		var lunarDate = lunar(dayDate);
+		var fes = lunarDate.festival();
+		if(fes.length>0){
+			$(".alm_lunar_date").html($.trim(lunarDate.festival()[0].desc));
+			$(".alm_lunar_date").show();
+		}else{
+			$(".alm_lunar_date").hide();
+		}
+		
+	});
+	/** calendar配置 **/
+	$(document).ready(
+	function() {
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+	 var calendar = $("#calendar").fullCalendar(
+		{
+			defaults: {
+                 lang: "zh"
+            },
+            header: {
+                left: "prev,next today",
+                center: "title",
+                right: "month,agendaWeek,agendaDay"
+            },
+            selectable: !0,
+            selectHelper: !0,
+            weekNumbers: 0,
+            weekNumberTitle: "\u5468\u6b21",
+			editable : true,
+			events:function(start,end,callback){
+				var events =[];
+				var obj = new Object();
+				for (var i= 0; i < 9; i++) {
+                        var f =new Object(),
+                        g = "{yyyy}-{MM}-{dd} {HH}:{mm}";
+                        f.allDay && (g = "{yyyy}-{MM}-{dd}");
+                        f.id=i,
+                        f.title="标题"+i,
+                        f.messagenotice = "12222";  
+                   		f.description = "221111";
+                        f.start = new Date(2016,3,i);
+                        f.end = new Date(2016,3,i+14);
+                        f.className = "agenda_event_class";
+                        f.allDay=true,
+                        events.push(f)
+                        if(i==2){
+                        	obj = f;
+                        }
+		              // $("#calendar").fullCalendar('renderEvent', f);  //核心的更新代码  
+                 }
+               callback(events);
+               //$("#calendar").fullCalendar('removeEvents',2); 
+               //$("#calendar").fullCalendar('renderEvent', obj);  //核心的更新代码  
+               //$("#calendar").fullCalendar('unselect');
+			},
+			select: function(a, c, b, e, g) {
+				doSelect(a, c, b, e, g);
+                    //d.doSelect(a, c, b, e, g)
+            },
+            eventDrop: function(a, c, b, e, g, l, p, q) {
+                //d.doEventDrop(a, c, b, e, g, l, p, q)
+                doEventDrop(a, c, b, e, g, l, p, q)
+            },
+            eventResize: function(a, c, b, e, g, l, p) {
+               // d.doEventResize(a, c, b, e, g, l, p)
+                doEventResize(a, c, b, e, g, l, p)
+            },
+			dayClick : function(dayDate, allDay, jsEvent, view) { //点击单元格事件			
+			},
+		  eventClick:function(calEvent, jsEvent, view){
+			  alert(calEvent.id)
+			  alert($.fullCalendar.formatDate(calEvent.start,"yyyy-MM-dd HH:mm:ss"))
+			  alert($.fullCalendar.formatDate(calEvent.end,"yyyy-MM-dd HH:mm:ss"))
+		  },
+		  eventRender: function(a, c, b) {
+               c.find(".fc-event-inner").addClass("ellipsis");
+               c.find(".fc-event-inner").attr("title", a.title)
+           },
+           eventAfterRender: function(a, c, b) {
+               a.allDay && "task" != a.module && c.find(".fc-event-inner").prepend("\x3cspan style\x3d'font-weight:bold'\x3e\u5168\u5929\x3c/span\x3e")
+           },
+           viewRender: function(a, c) {
+         },
+         viewDisplay: function(view) {
+        // alert(view.start)
+         //alert(view.end)
+         },
+		loading : function(bool) {
+			if (bool)
+				$("#msgTopTipWrapper").show();
+			else
+				$("#msgTopTipWrapper").fadeOut();
+		}
+
+		});
+	});
+	/** 绑定事件到日期下拉框 **/
+	$(function(){
+		$("#fc-dateSelect").delegate("select","change",function(){
+			var fcsYear = $("#fcs_date_year").val();
+			var fcsMonth = $("#fcs_date_month").val();
+			$("#calendar").fullCalendar('gotoDate', fcsYear, fcsMonth);
+		});
+	});
+	
+	/*
+	*d 开始时间
+	*b 结束时间
+	*/
+	function doSelect(d, b, a, c, f){
+		if(f.name=="month"){
+		}
+		alert($.fullCalendar.formatDate(d,"yyyy-MM-dd HH:mm"))
+		alert($.fullCalendar.formatDate(b,"yyyy-MM-dd HH:mm"))
+		alert(f.name)
+		$("#calendar").fullCalendar('unselect');
+	}
+	/*
+	*d 对象
+	*b 移动的天数
+	*/
+	function doEventDrop(d, b, a, c, f, e, g, l){
+		alert(d.id)
+		alert(d.start)
+		alert(a)
+	}
+	function  doEventResize(d, b, a, c, f, e, g){
+		alert(d.id)
+		alert(d.start)
+		alert(b)
+	}
+	</script>
+<style>
+body {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	}
+
+.calendarWrapper {
+width: 1190px;
+margin: 0 auto 15px;
+}
+
+#calendar {
+	width: 885px;
+	background: #fff;
+	padding: 15px 10px;
+}
+
+.calendarWrapper .rightSidePanel {
+	width: 240px;
+	padding: 0px 15px;
+}
+	.dib{display: inline-block;}
+	.fr{float: right;}
+</style>
+</head>
+<body>
+	<div id="msgTopTipWrapper" style="display:none">
+		<div id="msgTopTip">
+			<span><i class="iconTip"></i>正在载入日历数据...</span>
+		</div>
+	</div>
+	<div class="calendarWrapper">
+		<div id="calendar" class="dib"></div>
+	</div>
+</body>
+</html>

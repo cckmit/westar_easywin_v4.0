@@ -1,0 +1,54 @@
+*{ margin:0; padding:0; list-style: none; font-family: "arial, helvetica, sans-serif,Î¢ÈíÑÅºÚ"; font-size: 14px;border:0; }
+body{background:#eee;}
+.header{width: 100%; height: 50px; background:#1c2d42;color:#fff;}
+.main-content{ width:1440px;margin:15px auto; position: relative;overflow-x:auto;}
+.main-content:after,.form-style:after,.check-content li:after{ clear: left; display: table;content: "";}
+.mode-box{  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); min-height:200px;background:#e9eff3;margin-bottom: 10px;}
+input{ border:0 !important;background:none !important;}
+input:focus{ border:0 !important; box-shadow: none !important;}
+a:link,a:visited{ text-decoration: none;}
+a:hover{ text-decoration: none;}
+
+.f-left{ float: left;width:299px;}
+.mode-top{ background:#289bdd; height: 10px;}
+.mode-body{padding:0 5px 5px;}
+.mode-title{ color:#999; text-align: center; padding:10px;}
+.form-style{border-left: 1px solid #d9dfe2;border-top: 1px solid #d9dfe2;width: 100%;}
+.form-style li{ float: left;width:72px; height:60px; text-align: center; background:#fff; border-bottom: 1px solid #d9dfe2;border-right: 1px solid #d9dfe2;box-sizing: border-box;
+cursor: pointer;}
+.form-style li:hover{ box-shadow: 0 0 0 1px #5ba8d4 inset;}
+.form-icon{margin: 7px auto 3px;}
+.form-text{ line-height: 20px;color:#666; font-size: 13px;}
+.form-style li .fa{ color:#0072C6; line-height: 24px;transform: translate3d(0px, 2px, 0px); font-size: 14px;}
+.form-style li:hover .form-icon{ margin:4px auto 6px; transition: all 0.24s ease-in;}
+.form-style-md li{width:144px;}
+
+.form-main{ position: absolute;right:530px;bottom: 0;box-sizing: border-box;left: 314px;top: 0;transition: left 0.2s ease 0s, right 0.2s ease 0s, top 0.2s ease 0s, bottom 0.2s ease 0s; background:#fff;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);}
+.no-margin-bottom{ margin-bottom: 0;}
+
+.form-right{ float: right;width:514px;}
+.right-mode-box{box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); background: #fff;}
+.right-mode-top{ height:30px;background:#289bdd;color:#fff; line-height: 30px;padding:0 10px; cursor: pointer; position: relative;}
+.form-arrow{ color: #fff;position: absolute;right:10px;top:0;}
+.form-title-mm{ padding:0px;}
+.form-gray{color:#848484;}
+.form-title-mm{ padding:0 10px 10px;}
+.text-name{ padding:10px 0 0; margin-bottom: 3px;}
+.line-input{border-bottom: 1px solid #d9dfe2 !important; width: 100%; height:28px;}
+.line-input:focus{ border-bottom: 1px solid #80b7d6 !important; transition: all 0.3s ease-in-out;}
+.checkbox label,.radio label{ padding-left:0;}
+.checkbox{ margin-top:0;}
+.bordered-bottom-gray{ border-bottom: 1px solid #d9dfe2;}
+.gray-title{ position: relative;}
+.link-tag{ position: absolute;right:5px;top:10px;}
+.check-content li{ position: relative; height: 38px; line-height: 38px;}
+.delete-btn{ display: none; position: absolute;right:6px;top:-2px;}
+.check-content li:hover{background:#ededed;}
+.check-content li:hover .delete-btn{ display: block;}
+.tick-option{ width:20px; cursor: pointer; position: absolute;left:8px;top:4px;}
+.center-content{ margin:0 6%;width:88%;}
+.add-btn-content{display: block;border:1px dashed #d6d6d6;width:100%;padding:5px 0;}
+.add-btn-content:hover{ background:#289bdd;color:#fff; border-color: #289bdd; transition: all 0.3s ease-in-out;}
+.add-btn-content:hover .fa-plus{ color:#fff !important;}
+.current-btn{ background:#289bdd;color:#fff;}
+.current-btn:hover{ color:#fff;}

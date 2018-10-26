@@ -1,0 +1,23 @@
+@charset "UTF-8";
+input,textarea{
+	margin:3px 0 !important;
+}
+input[type="text"] {
+	border: 1px solid #DDD !important;
+	height:28px !important;
+	min-width:30px;
+	padding:0;
+}
+input[type="radio"],input[type="checkbox"] {
+    top: 3px !important;
+/*     left:1px !important; */
+    opacity: 1 !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+.webuploader-pick{
+	height: 30px
+}
+#formLayoutContent input[type="text"] {
+	border: 1px solid #DDD !important;
+}

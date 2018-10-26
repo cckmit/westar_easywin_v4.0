@@ -1,0 +1,18 @@
+/*2015-9-11任务流程样式*/
+.flow-content{padding:20px;}
+.clear-both{clear: both;height:20px;border-right:2px solid #51cf90;width:918px;}
+.clear-both2{clear: both;height:20px;border-left:2px solid #51cf90;width:918px;}
+.flow-right,.flow-left{width:918px;height:69px;}
+.flow-right>div{float: left;}
+.flow-left>div{float: right;}
+.flow-left{ border-right:2px solid #51cf90;}
+.flow-three{ border-left:2px solid #51cf90;}
+.flow-one{padding:10px 20px 15px 0;border-bottom: 2px solid #51cf90; position: relative;}
+.flow-two{border-bottom: 0;}
+.head-portrait{float: left;width:40px;height:40px;border:1px solid #dedede; border-radius: 5px; margin-left:10px;}
+.head-portrait img{width:40px;height: 40px;border-radius: 5px;}
+.flow-name{float: left;padding-left:10px;}
+.flow-name p{color:#A2A2A2;}
+.circle{position: absolute;left:0; bottom: -10px; background:url(../images/circle.png) no-repeat 0 0;width:16px;height:16px;}
+.arrow-0{position: absolute;left:100px;bottom: -12px;background:url(../images/arrow-0.png) no-repeat 0 0;width:16px;height:16px;}
+.flow-left .arrow-0{ transform:rotate(180deg);-ms-transform:rotate(180deg); -moz-transform:rotate(180deg); -webkit-transform:rotate(180deg); bottom: -7px;}

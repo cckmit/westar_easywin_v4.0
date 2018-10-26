@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 注意：类型必须唯一,同一个类型下的字典数据代码必须唯一  -->
+<root>
+	<DataDicType type="bool" zdescribe="布尔值">
+		<DataDic code="0" zvalue="否"></DataDic>
+		<DataDic code="1" zvalue="是"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="enabled" zdescribe="启用状态">
+		<DataDic code="1" zvalue="启用"></DataDic>
+		<DataDic code="0" zvalue="禁用"></DataDic>
+	</DataDicType>
+	<DataDicType type="menuTarget" zdescribe="菜单打开方式">
+		<DataDic code="center" zvalue="打开链接"></DataDic>
+		<DataDic code="_blank" zvalue="弹出页面"></DataDic>
+	</DataDicType>
+	<DataDicType type="menuRole" zdescribe="菜单权限">
+		<DataDic code="0" zvalue="公用菜单"></DataDic>
+		<DataDic code="1" zvalue="本机菜单"></DataDic>
+	</DataDicType>
+	<DataDicType type="roleType" zdescribe="角色类别">
+		<DataDic code="0" zvalue="系统级"></DataDic>
+		<DataDic code="1" zvalue="部门级"></DataDic>
+	</DataDicType>
+	<DataDicType type="isread" zdescribe="已读标志">
+		<DataDic code="0" zvalue="未读"></DataDic>
+		<DataDic code="1" zvalue="已读"></DataDic>
+	</DataDicType>
+	<DataDicType type="nodeType" zdescribe="流程节点类别">
+		<DataDic code="0" zvalue="开始节点"></DataDic>
+		<DataDic code="1" zvalue="普通节点"></DataDic>
+		<DataDic code="2" zvalue="结束节点"></DataDic>
+	</DataDicType>
+	<DataDicType type="formTable" zdescribe="表单设置">
+		<DataDic code="2" zvalue="指标录入"></DataDic>
+		<DataDic code="3" zvalue="指标汇报"></DataDic>
+		<DataDic code="4" zvalue="效能投诉受理"></DataDic>
+		<DataDic code="5" zvalue="效能投诉回复"></DataDic>
+		<DataDic code="6" zvalue="察访核验"></DataDic>
+	</DataDicType>
+	<DataDicType type="businessType" zdescribe="菜单业务类别">
+		<DataDic code="5" zvalue="系统管理"></DataDic>
+		<DataDic code="4" zvalue="领导驾驶窗"></DataDic>
+		<DataDic code="3" zvalue="领导批示件"></DataDic>
+		<DataDic code="2" zvalue="效能投诉"></DataDic>
+		<DataDic code="1" zvalue="绩效考评"></DataDic>
+	</DataDicType>
+	<DataDicType type="logBusinessType" zdescribe="日志业务类别">
+		<DataDic code="1" zvalue="领导批示件"></DataDic>
+		<DataDic code="2" zvalue="效能投诉"></DataDic>
+		<DataDic code="3" zvalue="绩效考评"></DataDic>
+		<DataDic code="4" zvalue="绩效考评"></DataDic>
+		<DataDic code="5" zvalue="领导驾驶窗"></DataDic>
+		<DataDic code="6" zvalue="系统管理"></DataDic>
+		<DataDic code="7" zvalue="察访核验"></DataDic>
+		<DataDic code="8" zvalue="绩优加分"></DataDic>
+		<DataDic code="9" zvalue="绩误扣分"></DataDic>
+		<DataDic code="10" zvalue="领导评价"></DataDic>
+		<DataDic code="11" zvalue="公众评议"></DataDic>
+		<DataDic code="12" zvalue="专项考核"></DataDic>
+		<DataDic code="13" zvalue="一票否决"></DataDic>
+		<DataDic code="14" zvalue="部门自评报告"></DataDic>
+		<DataDic code="15" zvalue="菜单维护"></DataDic>
+		<DataDic code="16" zvalue="机构维护"></DataDic>
+		<DataDic code="17" zvalue="人员维护"></DataDic>
+		<DataDic code="18" zvalue="角色维护"></DataDic>
+		<DataDic code="19" zvalue="系统消息"></DataDic>
+		<DataDic code="20" zvalue="网站维护"></DataDic>
+		<DataDic code="21" zvalue="公告管理"></DataDic>
+		<DataDic code="22" zvalue="流程维护"></DataDic>
+		<DataDic code="23" zvalue="督办管理"></DataDic>
+		<DataDic code="24" zvalue="季度考评"></DataDic>
+	</DataDicType>
+    <DataDicType type="tarLevel" zdescribe="指标层级">
+		<DataDic code="2" zvalue="二级"></DataDic>
+		<DataDic code="3" zvalue="三级"></DataDic>
+		<DataDic code="4" zvalue="四级"></DataDic>
+	</DataDicType>
+
+	<DataDicType type="newsType" zdescribe="新闻类别">
+		<DataDic code="01" zvalue="机构设置">
+			<DataDic code="0101" zvalue="机构简介"></DataDic>
+			<DataDic code="0102" zvalue="公告公示"></DataDic>
+		</DataDic>
+		<DataDic code="02" zvalue="新闻中心">
+			<DataDic code="0201" zvalue="新闻中心"></DataDic>
+			<DataDic code="0202" zvalue="廉政新闻"></DataDic>
+			<DataDic code="0203" zvalue="部门新闻"></DataDic>
+		</DataDic>
+		<DataDic code="03" zvalue="绩效管理">
+			<DataDic code="0301" zvalue="督查通报"></DataDic>
+			<DataDic code="0302" zvalue="电子公告"></DataDic>
+			<DataDic code="0303" zvalue="绩效考评"></DataDic>
+			<DataDic code="0304" zvalue="规章制度"></DataDic>
+			<DataDic code="0305" zvalue="曝光台"></DataDic>
+		</DataDic>
+		<DataDic code="04" zvalue="廉政建设">
+			<DataDic code="0401" zvalue="一岗双责"></DataDic>
+			<DataDic code="0402" zvalue="部门权力内控机制"></DataDic>
+			<DataDic code="0403" zvalue="执法监督"></DataDic>
+		</DataDic>
+		<DataDic code="05" zvalue="执法纠风">
+			<DataDic code="0501" zvalue="热线介绍"></DataDic>
+			<DataDic code="0502" zvalue="热线月报"></DataDic>
+			<DataDic code="0503" zvalue="往期回顾"></DataDic>
+			<DataDic code="0504" zvalue="执法监察"></DataDic>
+			<DataDic code="0505" zvalue="行风建设"></DataDic>
+		</DataDic>
+		<DataDic code="06" zvalue="政策法规">
+			<DataDic code="0601" zvalue="政策法规"></DataDic>
+		</DataDic>
+	</DataDicType>
+	
+	<DataDicType type="checkTarget" zdescribe="领导批示件审核结果">
+		<DataDic code="1" zvalue="审核通过"></DataDic>
+		<DataDic code="2" zvalue="审核不通过"></DataDic>
+	</DataDicType>
+	<DataDicType type="statusTarget" zdescribe="审核状态">
+		<DataDic code="0" zvalue="未审核"></DataDic>
+		<DataDic code="1" zvalue="审核通过"></DataDic>
+		<DataDic code="2" zvalue="审核不通过"></DataDic>
+		<DataDic code="3" zvalue="已重新办理"></DataDic>
+		<DataDic code="4" zvalue="审核未完成"></DataDic>
+	</DataDicType>
+	<DataDicType type="noticeTypeTarget" zdescribe="公告类别">
+		<DataDic code="1" zvalue="一般公告"></DataDic>
+		<DataDic code="2" zvalue="新闻公告"></DataDic>
+		<DataDic code="3" zvalue="财务公告"></DataDic>
+		<DataDic code="4" zvalue="相关部门公告"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="browseStatusTarget" zdescribe="浏览状态">
+		<DataDic code="0" zvalue="未浏览"></DataDic>
+		<DataDic code="1" zvalue="已浏览"></DataDic>
+	</DataDicType>
+	<DataDicType type="targetType" zdescribe="指标类别">
+		<DataDic code="1" zvalue="部门指标"></DataDic>
+		<DataDic code="2" zvalue="共性指标"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="itemType" zdescribe="指标项目类型">
+		<DataDic code="1" zvalue="定量指标"></DataDic>
+		<DataDic code="2" zvalue="定性指标"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="itemClassify" zdescribe="指标项目分类">
+		<DataDic code="0" zvalue="普通指标"></DataDic>
+		<DataDic code="1" zvalue="重大项目"></DataDic>
+		<DataDic code="2" zvalue="民生工程"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="complaintObjectType" zdescribe="投诉对象类型">
+		<DataDic code="1" zvalue="个人"></DataDic>
+		<DataDic code="2" zvalue="单位"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="complainWay" zdescribe="投诉方式 1.电话投诉 2.来信投诉 3.来访投诉 4.网站投诉">
+		<DataDic code="1" zvalue="电话投诉 "></DataDic>
+		<DataDic code="2" zvalue="来信投诉"></DataDic>
+		<DataDic code="3" zvalue="来访投诉 "></DataDic>
+		<DataDic code="4" zvalue="网站投诉"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="complainType" zdescribe="投诉类别,1.不作为 2.乱作为 3.工作不尽职 4.违反工作纪律 5.服务态度差 6.不讲诚信 7.其他">
+		<DataDic code="1" zvalue="不作为 "></DataDic>
+		<DataDic code="2" zvalue="乱作为 "></DataDic>
+		<DataDic code="3" zvalue="工作不尽职 "></DataDic>
+		<DataDic code="4" zvalue="违反工作纪律"></DataDic>
+		<DataDic code="5" zvalue="服务态度差"></DataDic>
+		<DataDic code="6" zvalue="不讲诚信"></DataDic>
+		<DataDic code="7" zvalue="其他"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="complaintState" zdescribe="效能投诉件状态:1未受理,2不受理,3受理审核中,4办理中,5办理审核中,6回复中,7待评价,8已评价">
+		<DataDic code="1" zvalue="未受理 "></DataDic>
+		<DataDic code="2" zvalue="不受理"></DataDic>
+		<DataDic code="3" zvalue="受理审核中 "></DataDic>
+		<DataDic code="4" zvalue="办理中"></DataDic>
+		<DataDic code="5" zvalue="办理审核中"></DataDic>
+		<DataDic code="6" zvalue="回复中"></DataDic>
+		<DataDic code="7" zvalue="待评价"></DataDic>
+		<DataDic code="8" zvalue="已评价"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="publicity" zdescribe="网站公示,0.不公示 1.公示">
+		<DataDic code="1" zvalue="公示 "></DataDic>
+		<DataDic code="2" zvalue="不公示 "></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="satisfaction" zdescribe="满意度 1满意,2不满意,3一般,4差">
+		<DataDic code="1" zvalue="满意"></DataDic>
+		<DataDic code="2" zvalue="不满意"></DataDic>
+		<DataDic code="3" zvalue="一般 "></DataDic>
+		<DataDic code="4" zvalue="差"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="calMethod" zdescribe="计分方式">
+		<DataDic code="1" zvalue="直接扣分计分法"></DataDic>
+		<DataDic code="2" zvalue="完成比率计分法"></DataDic>
+		<DataDic code="3" zvalue="否决计分法"></DataDic>
+		<DataDic code="4" zvalue="超目标递增计分法"></DataDic>
+		<DataDic code="5" zvalue="区间计分法"></DataDic>
+	</DataDicType>
+	<DataDicType type="noticeUserType" zdescribe="公告接收对象类型">
+		<DataDic code="0" zvalue="所有人"></DataDic>
+		<DataDic code="1" zvalue="部门"></DataDic>
+		<DataDic code="2" zvalue="指定人员"></DataDic>
+	</DataDicType>
+	<DataDicType type="supBusinessType" zdescribe="业务类别">
+		<DataDic code="1" zvalue="领导批示件"></DataDic>
+		<DataDic code="2" zvalue="效能投诉"></DataDic>
+		<DataDic code="3" zvalue="指标录入"></DataDic>
+		<DataDic code="4" zvalue="指标汇报"></DataDic>
+	</DataDicType>
+	<DataDicType type="supType" zdescribe="督办类别">
+		<DataDic code="1" zvalue="督办"></DataDic>
+		<DataDic code="2" zvalue="黄牌"></DataDic>
+		<DataDic code="3" zvalue="红牌"></DataDic>
+	</DataDicType>
+	<DataDicType type="logType" zdescribe="日志类别类别">
+		<DataDic code="1" zvalue="添加"></DataDic>
+		<DataDic code="2" zvalue="更新"></DataDic>
+		<DataDic code="3" zvalue="删除"></DataDic>
+	</DataDicType>
+	<DataDicType type="gender" zdescribe="性别">
+		<DataDic code="0" zvalue="女"></DataDic>
+		<DataDic code="1" zvalue="男"></DataDic>
+	</DataDicType>
+	<DataDicType type="joinType" zdescribe="加入方式">
+		<DataDic code="1" zvalue="申请"></DataDic>
+		<DataDic code="2" zvalue="邀请"></DataDic>
+	</DataDicType>
+	<DataDicType type="msgShareType" zdescribe="信息分享类别">
+		<DataDic code="1" zvalue="纯文本"></DataDic>
+		<DataDic code="2" zvalue="任务"></DataDic>
+		<DataDic code="3" zvalue="投票"></DataDic>
+	</DataDicType>
+	<DataDicType type="progress" zdescribe="进度描述">
+		<DataDic code="0" zvalue="0%"></DataDic>
+		<DataDic code="10" zvalue="10%"></DataDic>
+		<DataDic code="20" zvalue="20%"></DataDic>
+		<DataDic code="30" zvalue="30%"></DataDic>
+		<DataDic code="40" zvalue="40%"></DataDic>
+		<DataDic code="50" zvalue="50%"></DataDic>
+		<DataDic code="60" zvalue="60%"></DataDic>
+		<DataDic code="70" zvalue="70%"></DataDic>
+		<DataDic code="80" zvalue="80%"></DataDic>
+		<DataDic code="90" zvalue="90%"></DataDic>
+		<DataDic code="100" zvalue="100%"></DataDic>
+	</DataDicType>
+	<DataDicType type="state" zdescribe="状态描述">
+		<DataDic code="0" zvalue="未激活"></DataDic>
+		<DataDic code="1" zvalue="正常"></DataDic>
+		<DataDic code="2" zvalue="挂起"></DataDic>
+		<DataDic code="3" zvalue="取消"></DataDic>
+		<DataDic code="4" zvalue="完成"></DataDic>
+		<DataDic code="8" zvalue="存档"></DataDic>
+	</DataDicType>
+	<DataDicType type="repLev" zdescribe="周报内容层级">
+		<DataDic code="1" zvalue="团队级"></DataDic>
+		<DataDic code="2" zvalue="小组级"></DataDic>
+		<DataDic code="3" zvalue="成员级"></DataDic>
+	</DataDicType>
+	<DataDicType type="defModContent" zdescribe="默认周报表单的内容">
+		<DataDic code="1" zvalue="本周主要工作成绩"></DataDic>
+		<DataDic code="2" zvalue="存在的问题及需要的资源支持"></DataDic>
+	</DataDicType>
+	<DataDicType type="dailyModContent" zdescribe="默认分享表单的内容">
+		<DataDic code="1" zvalue="分享内容"></DataDic>
+	</DataDicType>
+	<DataDicType type="moduleType" zdescribe="所属模块">
+		<DataDic code="006" zvalue="周报"></DataDic>
+		<DataDic code="050" zvalue="日报"></DataDic>
+		<DataDic code="00601" zvalue="日报留言"></DataDic>
+		<DataDic code="003" zvalue="任务"></DataDic>
+		<DataDic code="00301" zvalue="任务讨论"></DataDic>
+		<DataDic code="005" zvalue="项目"></DataDic>
+		<DataDic code="00501" zvalue="项目讨论"></DataDic>
+		<DataDic code="00503" zvalue="项目讨论"></DataDic>
+		<DataDic code="012" zvalue="客户"></DataDic>
+		<DataDic code="01201" zvalue="客户讨论"></DataDic>
+		<DataDic code="013" zvalue="知识"></DataDic>
+		<DataDic code="011" zvalue="问答"></DataDic>
+		<DataDic code="01101" zvalue="问答"></DataDic>
+		<DataDic code="01102" zvalue="问答讨论"></DataDic>
+		<DataDic code="004" zvalue="投票"></DataDic>
+		<DataDic code="00401" zvalue="投票讨论"></DataDic>
+		<DataDic code="022" zvalue="审批"></DataDic>
+		<DataDic code="039" zvalue="公告"></DataDic>
+		<DataDic code="03901" zvalue="公告留言"></DataDic>
+		<DataDic code="040" zvalue="制度"></DataDic>
+		<DataDic code="067" zvalue="变更"></DataDic>
+		<DataDic code="099" zvalue="催办"></DataDic>
+		<DataDic code="0103" zvalue="领款通知"></DataDic>
+		<DataDic code="06602" zvalue="完成结算"></DataDic>
+		<DataDic code="06601" zvalue="财务结算"></DataDic>
+		<DataDic code="00306" zvalue="任务报延"></DataDic>
+		<DataDic code="068" zvalue="外部联系人"></DataDic>
+	</DataDicType>
+	<DataDicType type="taskType" zdescribe="任务类型">
+		<DataDic code="1" zvalue="认领制"></DataDic>
+		<DataDic code="2" zvalue="协同制"></DataDic>
+	</DataDicType>
+	<DataDicType type="operateType" zdescribe="操作类型">
+		<DataDic code="add" zvalue="增加禁用"></DataDic>
+		<DataDic code="delete" zvalue="删除禁用"></DataDic>
+		<!-- <DataDic code="update" zvalue="关闭修改"></DataDic> -->
+	</DataDicType>
+	<DataDicType type="grade" zdescribe="重要等级">
+		<DataDic code="1" zvalue="普通"></DataDic>
+		<DataDic code="2" zvalue="重要"></DataDic>
+		<DataDic code="3" zvalue="紧急"></DataDic>
+		<DataDic code="4" zvalue="重要且紧急"></DataDic>
+	</DataDicType>
+	<DataDicType type="clockType" zdescribe="定时器重复类型">
+		<DataDic code="0" zvalue="单次"></DataDic>
+		<DataDic code="1" zvalue="每天"></DataDic>
+		<DataDic code="2" zvalue="每周"></DataDic>
+		<DataDic code="3" zvalue="每月"></DataDic>
+		<DataDic code="4" zvalue="每年"></DataDic>
+	</DataDicType>
+	<DataDicType type="clockWay" zdescribe="定时提醒方式">
+		<DataDic code="0" zvalue="即时通讯"></DataDic>
+		<DataDic code="1" zvalue="邮件"></DataDic>
+		<DataDic code="2" zvalue="短信"></DataDic>
+		<!--
+		<DataDic code="3" zvalue="微信"></DataDic>
+		<DataDic code="4" zvalue="微博"></DataDic>
+		-->
+	</DataDicType>
+	<DataDicType type="repType" zdescribe="日程重复方式">
+		<DataDic code="1" zvalue="每天"></DataDic>
+		<DataDic code="2" zvalue="每周"></DataDic>
+		<DataDic code="3" zvalue="每月"></DataDic>
+		<DataDic code="4" zvalue="每年"></DataDic>
+	</DataDicType>
+	<DataDicType type="repEndType" zdescribe="日程结束方式">
+		<DataDic code="0" zvalue="永不"></DataDic>
+		<DataDic code="1" zvalue="次数"></DataDic>
+		<DataDic code="2" zvalue="日期"></DataDic>
+	</DataDicType>
+	<DataDicType type="roomEquip" zdescribe="会议室设备">
+		<DataDic code="1" zvalue="投影仪"></DataDic>
+		<DataDic code="2" zvalue="电动幕"></DataDic>
+		<DataDic code="3" zvalue="话筒"></DataDic>
+		<DataDic code="4" zvalue="音响"></DataDic>
+	</DataDicType>
+	<DataDicType type="publicType" zdescribe="公开程度">
+		<DataDic code="0" zvalue="正常(上级可见)"></DataDic>
+		<DataDic code="1" zvalue="仅自己查看"></DataDic>
+		<DataDic code="2" zvalue="公开"></DataDic>
+	</DataDicType>
+	<DataDicType type="aheadTime" zdescribe="提前提醒类型">
+		<DataDic code="0" zvalue="无"></DataDic>
+		<DataDic code="1" zvalue="5分钟"></DataDic>
+		<DataDic code="2" zvalue="15分钟"></DataDic>
+		<DataDic code="3" zvalue="30分钟"></DataDic>
+		<DataDic code="4" zvalue="1小时"></DataDic>
+		<DataDic code="5" zvalue="1天"></DataDic>
+	</DataDicType>
+	<DataDicType type="flowTableType" zdescribe="流程表单类型">
+		<DataDic code="TEXT" zvalue="文本"></DataDic>
+		<DataDic code="TABLE" zvalue="表格"></DataDic>
+		<DataDic code="PDF" zvalue="PDF文件"></DataDic>
+		<DataDic code="OFFICE" zvalue="OFFICE文件"></DataDic>
+		<DataDic code="OTHER" zvalue="其它"></DataDic>
+	</DataDicType>
+	<DataDicType type="menuType" zdescribe="菜单类型">
+		<DataDic code="1" zvalue="工作"></DataDic>
+		<DataDic code="2" zvalue="CRM"></DataDic>
+		<DataDic code="3" zvalue="审批"></DataDic>
+		<DataDic code="4" zvalue="知识管理"></DataDic>
+		<DataDic code="5" zvalue="小工具"></DataDic>
+	</DataDicType>	
+	<DataDicType type="sysConfig" zdescribe="系统配置项">
+		<DataDic code="1" zvalue="弹窗提醒"></DataDic>
+		<DataDic code="2" zvalue="即时聊天提醒"></DataDic>
+	</DataDicType>	
+	<DataDicType type="stepType" zdescribe="流程步骤类型">
+		<DataDic code="start" zvalue="start"></DataDic>
+		<DataDic code="end" zvalue="end"></DataDic>
+		<DataDic code="exe" zvalue="exe"></DataDic>
+	</DataDicType>	
+	<DataDicType type="stepWay" zdescribe="流程步骤扭转方式">
+		<!-- <DataDic code="single" zvalue="串行（没得选）"></DataDic> -->
+		<DataDic code="branch" zvalue="分支（择其一）"></DataDic>
+		<!-- <DataDic code="parallel" zvalue="并行（都要走）"></DataDic> -->
+	</DataDicType>	
+	<DataDicType type="executorWay" zdescribe="流程步骤办理人指定方式">
+		<DataDic code="creatorSelf" zvalue="发起人"></DataDic>
+		<DataDic code="directLeader" zvalue="发起人的直属上级"></DataDic>
+		<DataDic code="appointMan" zvalue="人员指定"></DataDic>
+	</DataDicType>	
+	<DataDicType type="noticeWay" zdescribe="告知方式">
+		<DataDic code="1" zvalue="邮件"></DataDic>
+		<DataDic code="2" zvalue="短信"></DataDic>
+		<DataDic code="3" zvalue="微信"></DataDic>
+		<DataDic code="4" zvalue="微博"></DataDic>
+		<DataDic code="5" zvalue="及时通讯"></DataDic>
+	</DataDicType>	
+	<DataDicType type="defaultStep" zdescribe="是否是默认选择步骤">
+		<DataDic code="0" zvalue="不是"></DataDic>
+		<DataDic code="1" zvalue="是"></DataDic>
+	</DataDicType>
+	<DataDicType type="ruleType" zdescribe="考勤制度">
+		<DataDic code="1" zvalue="标准考勤制度"></DataDic>
+		<DataDic code="2" zvalue="单双周轮休制度"></DataDic>
+		<DataDic code="3" zvalue="灵活考勤制度"></DataDic>
+	</DataDicType>	
+	<DataDicType type="orderType" zdescribe="订单类型">
+		<DataDic code="001" zvalue="团队升级"></DataDic>
+	</DataDicType>	
+	<DataDicType type="paidWay" zdescribe="支付方式">
+		<DataDic code="0" zvalue="线下"></DataDic>
+		<DataDic code="1" zvalue="支付宝"></DataDic>
+		<DataDic code="2" zvalue="微信"></DataDic>
+	</DataDicType>		
+	<DataDicType type="outOfService" zdescribe="是否在服务内">
+		<DataDic code="0" zvalue="服务外"></DataDic>
+		<DataDic code="1" zvalue="服务内"></DataDic>
+	</DataDicType>
+	<DataDicType type="incType" zdescribe="奖惩类型">
+		<DataDic code="0" zvalue="惩罚"></DataDic>
+		<DataDic code="1" zvalue="奖励"></DataDic>
+	</DataDicType>
+	<DataDicType type="bgypUnit" zdescribe="办公用品单位">
+		<DataDic code="1" zvalue="个"></DataDic>
+		<DataDic code="2" zvalue="本"></DataDic>
+		<DataDic code="3" zvalue="把"></DataDic>
+		<DataDic code="4" zvalue="支"></DataDic>
+		<DataDic code="5" zvalue="台"></DataDic>
+		<DataDic code="6" zvalue="条"></DataDic>
+		<DataDic code="7" zvalue="片"></DataDic>
+		<DataDic code="8" zvalue="盒"></DataDic>
+		<DataDic code="9" zvalue="包"></DataDic>
+		<DataDic code="10" zvalue="卷"></DataDic>
+		<DataDic code="11" zvalue="瓶"></DataDic>
+		<DataDic code="12" zvalue="节"></DataDic>
+		<DataDic code="13" zvalue="副"></DataDic>
+		<DataDic code="14" zvalue="块"></DataDic>
+		<DataDic code="15" zvalue="袋"></DataDic>
+		<DataDic code="16" zvalue="粒"></DataDic>
+		
+		
+	</DataDicType>
+	<DataDicType type="nation" zdescribe="族别">
+		<DataDic code="01" zvalue="汉族"></DataDic>
+		<DataDic code="02" zvalue="蒙古族"></DataDic>
+		<DataDic code="03" zvalue="回族"></DataDic>
+		<DataDic code="04" zvalue="藏族"></DataDic>
+		<DataDic code="05" zvalue="维吾尔族"></DataDic>
+		<DataDic code="06" zvalue="苗族"></DataDic>
+		<DataDic code="07" zvalue="彝族"></DataDic>
+		<DataDic code="08" zvalue="壮族"></DataDic>
+		<DataDic code="09" zvalue="布依族"></DataDic>
+		<DataDic code="10" zvalue="朝鲜族"></DataDic>
+		<DataDic code="11" zvalue="满族"></DataDic>
+		<DataDic code="12" zvalue="侗族"></DataDic>
+		<DataDic code="13" zvalue="瑶族"></DataDic>
+		<DataDic code="14" zvalue="白族"></DataDic>
+		<DataDic code="15" zvalue="土家族"></DataDic>
+		<DataDic code="16" zvalue="哈尼族"></DataDic>
+		<DataDic code="17" zvalue="哈萨克族"></DataDic>
+		<DataDic code="18" zvalue="傣族"></DataDic>
+		<DataDic code="19" zvalue="黎族"></DataDic>
+		<DataDic code="20" zvalue="傈僳族"></DataDic>
+		<DataDic code="21" zvalue="佤族"></DataDic>
+		<DataDic code="22" zvalue="畲族"></DataDic>
+		<DataDic code="23" zvalue="高山族"></DataDic>
+		<DataDic code="24" zvalue="拉祜族"></DataDic>
+		<DataDic code="25" zvalue="水族"></DataDic>
+		<DataDic code="26" zvalue="东乡族"></DataDic>
+		<DataDic code="27" zvalue="纳西族"></DataDic>
+		<DataDic code="28" zvalue="景颇族"></DataDic>
+		<DataDic code="29" zvalue="柯尔克孜族"></DataDic>
+		<DataDic code="30" zvalue="土族"></DataDic>
+		<DataDic code="31" zvalue="达斡尔族"></DataDic>
+		<DataDic code="32" zvalue="仫佬族"></DataDic>
+		<DataDic code="33" zvalue="羌族"></DataDic>
+		<DataDic code="34" zvalue="布朗族"></DataDic>
+		<DataDic code="35" zvalue="撒拉族"></DataDic>
+		<DataDic code="36" zvalue="毛难族"></DataDic>
+		<DataDic code="37" zvalue="仡佬族"></DataDic>
+		<DataDic code="38" zvalue="锡伯族"></DataDic>
+		<DataDic code="39" zvalue="阿昌族"></DataDic>
+		<DataDic code="40" zvalue="普米族"></DataDic>
+		<DataDic code="41" zvalue="塔吉克族"></DataDic>
+		<DataDic code="42" zvalue="怒族"></DataDic>
+		<DataDic code="43" zvalue="乌孜别克族"></DataDic>
+		<DataDic code="44" zvalue="俄罗斯族"></DataDic>
+		<DataDic code="45" zvalue="鄂温克族"></DataDic>
+		<DataDic code="46" zvalue="崩龙族"></DataDic>
+		<DataDic code="47" zvalue="保安族"></DataDic>
+		<DataDic code="48" zvalue="裕固族"></DataDic>
+		<DataDic code="49" zvalue="京族"></DataDic>
+		<DataDic code="50" zvalue="塔塔尔族"></DataDic>
+		<DataDic code="51" zvalue="独龙族"></DataDic>
+		<DataDic code="52" zvalue="鄂伦春族"></DataDic>
+		<DataDic code="53" zvalue="赫哲族"></DataDic>
+		<DataDic code="54" zvalue="门巴族"></DataDic>
+		<DataDic code="55" zvalue="珞巴族"></DataDic>
+		<DataDic code="56" zvalue="基诺族"></DataDic>
+	</DataDicType>
+	<DataDicType type="employeeType" zdescribe="员工类型">
+		<DataDic code="01" zvalue="合同工"></DataDic>
+		<DataDic code="02" zvalue="正式员工"></DataDic>
+		<DataDic code="03" zvalue="临时工"></DataDic>
+	</DataDicType>
+	<DataDicType type="payrollType" zdescribe="在职状态">
+		<DataDic code="01" zvalue="在职"></DataDic>
+		<DataDic code="02" zvalue="辞职"></DataDic>
+		<DataDic code="03" zvalue="离休"></DataDic>
+		<DataDic code="04" zvalue="退休"></DataDic>
+		<DataDic code="05" zvalue="借调"></DataDic>
+	</DataDicType>
+	<DataDicType type="eduFormalType" zdescribe="学历">
+		<DataDic code="01" zvalue="小学"></DataDic>
+		<DataDic code="02" zvalue="初中"></DataDic>
+		<DataDic code="03" zvalue="高中"></DataDic>
+		<DataDic code="04" zvalue="中专"></DataDic>
+		<DataDic code="05" zvalue="大专"></DataDic>
+		<DataDic code="06" zvalue="本科"></DataDic>
+		<DataDic code="07" zvalue="研究生"></DataDic>
+		<DataDic code="08" zvalue="博士"></DataDic>
+		<DataDic code="09" zvalue="博士后"></DataDic>
+		<DataDic code="10" zvalue="技校"></DataDic>
+	</DataDicType>
+	<DataDicType type="degreeType" zdescribe="学位">
+		<DataDic code="01" zvalue="博士后"></DataDic>
+		<DataDic code="02" zvalue="博士"></DataDic>
+		<DataDic code="03" zvalue="MBA"></DataDic>
+		<DataDic code="04" zvalue="硕士"></DataDic>
+		<DataDic code="05" zvalue="双硕士"></DataDic>
+		<DataDic code="06" zvalue="学士"></DataDic>
+		<DataDic code="07" zvalue="无"></DataDic>
+	</DataDicType>
+	<DataDicType type="politStatus" zdescribe="政治面貌">
+		<DataDic code="01" zvalue="群众"></DataDic>
+		<DataDic code="02" zvalue="共青团员"></DataDic>
+		<DataDic code="03" zvalue="中共党员"></DataDic>
+		<DataDic code="04" zvalue="中共预备党员"></DataDic>
+		<DataDic code="05" zvalue="民主党派"></DataDic>
+		<DataDic code="06" zvalue="无党派人士"></DataDic>
+	</DataDicType>
+	<DataDicType type="marryStatus" zdescribe="婚姻状况">
+		<DataDic code="01" zvalue="未婚"></DataDic>
+		<DataDic code="02" zvalue="已婚"></DataDic>
+		<DataDic code="03" zvalue="离异"></DataDic>
+		<DataDic code="04" zvalue="丧偶"></DataDic>
+	</DataDicType>
+	<DataDicType type="tranceType" zdescribe="人事调动类型">
+		<DataDic code="01" zvalue="晋升"></DataDic>
+		<DataDic code="02" zvalue="平调"></DataDic>
+		<DataDic code="03" zvalue="降级"></DataDic>
+		<DataDic code="04" zvalue="其他"></DataDic>
+	</DataDicType>
+	<DataDicType type="leaveType" zdescribe="离职类型">
+		<DataDic code="01" zvalue="辞职"></DataDic>
+		<DataDic code="02" zvalue="离休"></DataDic>
+		<DataDic code="03" zvalue="退休"></DataDic>
+		<DataDic code="04" zvalue="借调"></DataDic>
+		<DataDic code="04" zvalue="其他"></DataDic>
+	</DataDicType>
+	<DataDicType type="resumeType" zdescribe="复职类型">
+		<DataDic code="01" zvalue="调回"></DataDic>
+		<DataDic code="02" zvalue="复员"></DataDic>
+		<DataDic code="03" zvalue="其他"></DataDic>
+	</DataDicType>
+	<DataDicType type="nativePro" zdescribe="籍贯省">
+		<DataDic code="110000" zvalue="北京"></DataDic>
+		<DataDic code="120000" zvalue="天津"></DataDic>
+		<DataDic code="130000" zvalue="河北"></DataDic>
+		<DataDic code="140000" zvalue="山西"></DataDic>
+		<DataDic code="150000" zvalue="内蒙古"></DataDic>
+		<DataDic code="210000" zvalue="辽宁"></DataDic>
+		<DataDic code="220000" zvalue="吉林"></DataDic>
+		<DataDic code="230000" zvalue="黑龙江"></DataDic>
+		<DataDic code="310000" zvalue="上海"></DataDic>
+		<DataDic code="320000" zvalue="江苏"></DataDic>
+		<DataDic code="330000" zvalue="浙江"></DataDic>
+		<DataDic code="340000" zvalue="安徽"></DataDic>
+		<DataDic code="350000" zvalue="福建"></DataDic>
+		<DataDic code="360000" zvalue="江西"></DataDic>
+		<DataDic code="370000" zvalue="山东"></DataDic>
+		<DataDic code="410000" zvalue="河南"></DataDic>
+		<DataDic code="420000" zvalue="湖北"></DataDic>
+		<DataDic code="430000" zvalue="湖南"></DataDic>
+		<DataDic code="440000" zvalue="广东"></DataDic>
+		<DataDic code="450000" zvalue="广西"></DataDic>
+		<DataDic code="460000" zvalue="海南"></DataDic>
+		<DataDic code="500000" zvalue="重庆"></DataDic>
+		<DataDic code="510000" zvalue="四川"></DataDic>
+		<DataDic code="520000" zvalue="贵州"></DataDic>
+		<DataDic code="530000" zvalue="云南"></DataDic>
+		<DataDic code="540000" zvalue="西藏"></DataDic>
+		<DataDic code="610000" zvalue="陕西"></DataDic>
+		<DataDic code="620000" zvalue="甘肃"></DataDic>
+		<DataDic code="630000" zvalue="青海"></DataDic>
+		<DataDic code="640000" zvalue="宁夏"></DataDic>
+		<DataDic code="650000" zvalue="新疆"></DataDic>
+		<DataDic code="710000" zvalue="台湾"></DataDic>
+		<DataDic code="810000" zvalue="香港"></DataDic>
+		<DataDic code="820000" zvalue="澳门"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="attenceConnType" zdescribe="考勤机品牌">
+		<DataDic code="1" zvalue="中控"></DataDic>
+	</DataDicType>
+	<DataDicType type="announType" zdescribe="公告类型">
+		<DataDic code="1" zvalue="通知"></DataDic>
+		<DataDic code="2" zvalue="同报"></DataDic>
+		<DataDic code="3" zvalue="决定"></DataDic>
+		<DataDic code="4" zvalue="其他"></DataDic>
+		<DataDic code="0" zvalue="无类型"></DataDic>
+	</DataDicType>
+	<DataDicType type="subTimeType" zdescribe="提交时间类型">
+		<DataDic code="2" zvalue="本周五"></DataDic>
+		<DataDic code="1" zvalue="本周六"></DataDic>
+		<DataDic code="0" zvalue="本周日"></DataDic>
+		<DataDic code="-1" zvalue="下周一"></DataDic>
+		<DataDic code="-2" zvalue="下周二"></DataDic>
+		<DataDic code="-3" zvalue="下周三"></DataDic>
+		<DataDic code="-4" zvalue="下周四"></DataDic>
+	</DataDicType>
+	<DataDicType type="contactWay" zdescribe="联系人联系方式">
+		<DataDic code="1" zvalue="办公电话"></DataDic>
+		<DataDic code="2" zvalue="住宅电话"></DataDic>
+		<DataDic code="3" zvalue="手机"></DataDic>
+		<DataDic code="4" zvalue="QQ"></DataDic>
+		<DataDic code="5" zvalue="微信"></DataDic>
+		<DataDic code="6" zvalue="传真"></DataDic>
+		<DataDic code="7" zvalue="邮箱"></DataDic>
+		<DataDic code="8" zvalue="微博"></DataDic>
+	</DataDicType>
+	
+	<DataDicType type="demandType" zdescribe="需求类型">
+		<DataDic code="1" zvalue="新增"></DataDic>
+		<DataDic code="2" zvalue="变更"></DataDic>
+		<DataDic code="3" zvalue="BUG"></DataDic>
+	</DataDicType>
+	<DataDicType type="proType" zdescribe="产品类型">
+		<DataDic code="1" zvalue="企业"></DataDic>
+		<DataDic code="2" zvalue="政府"></DataDic>
+	</DataDicType>
+	<DataDicType type="stepTag" zdescribe="任务节点类型">
+		<DataDic code="1" zvalue="办理"></DataDic>
+		<DataDic code="2" zvalue="审核"></DataDic>
+		<DataDic code="3" zvalue="测试"></DataDic>
+	</DataDicType>
+	<DataDicType type="modBusName" zdescribe="模块编号对应的名称">
+		<DataDic code="003" zvalue="任务"></DataDic>
+		<DataDic code="004" zvalue="投票"></DataDic>
+		<DataDic code="005" zvalue="项目"></DataDic>
+		<DataDic code="006" zvalue="周报"></DataDic>
+		<DataDic code="011" zvalue="问答"></DataDic>
+		<DataDic code="012" zvalue="客户"></DataDic>
+		<DataDic code="013" zvalue="文档"></DataDic>
+		<DataDic code="021" zvalue="关注"></DataDic>
+		<DataDic code="022" zvalue="审批"></DataDic>
+		<DataDic code="029" zvalue="出差"></DataDic>
+		<DataDic code="036" zvalue="请假"></DataDic>
+		<DataDic code="030" zvalue="借款"></DataDic>
+		<DataDic code="031" zvalue="借款"></DataDic>
+		<DataDic code="03101" zvalue="报销"></DataDic>
+		<DataDic code="03102" zvalue="报销"></DataDic>
+		<DataDic code="03401" zvalue="报销"></DataDic>
+		<DataDic code="037" zvalue="加班"></DataDic>
+		<DataDic code="04201" zvalue="运维"></DataDic>
+		<DataDic code="04202" zvalue="运维"></DataDic>
+		<DataDic code="04203" zvalue="运维"></DataDic>
+		<DataDic code="04204" zvalue="运维"></DataDic>
+		<DataDic code="050" zvalue="日报"></DataDic>
+		<DataDic code="06601" zvalue="结算"></DataDic>
+	</DataDicType>
+	
+</root>

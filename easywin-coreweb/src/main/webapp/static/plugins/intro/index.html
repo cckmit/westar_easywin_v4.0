@@ -1,0 +1,29 @@
+<!--页面引导插件 -->
+<html>  
+<head>  
+<title>网志博客-http://w3note.com</title>  
+<script src="./intro.js" type="text/javascript"></script>  
+<link href="./introjs.css" rel="stylesheet" type="text/css" />  
+<style>
+.bg1{
+	background-color:#9F0;
+}
+.bg2{background-color:#f60;}
+.div_class{float:left;width:150px;height:150px;margin-top:10px;border: 1px solid #fff;}</style>  
+<script type="text/javascript">
+introJs().setOptions({'prevLabel':'&larr; 上一步','nextLabel':'下一步 &rarr;','skipLabel':'跳过','doneLabel':'完成'})
+.goToStep(1).start().oncomplete(function() {
+      //   window.location.href = '/msgShare/listPagedMsgTodo?pager.pageSize=15&sid=${param.sid}&multipage=true';
+   });
+</script>  
+   
+</head>  
+<body>  
+<a href="javascript:javascript:introJs().start();">开始引导</button>  
+<div class="div_class bg1" data-step="1" data-intro="第一步介绍" data-position='middle
+'>这里出现第一步引导</div>  
+<div class="div_class bg2" data-step="2" data-intro="第二步介绍" data-position='left'>这里出现第二步引导</div>  
+<div class="div_class bg1" data-step="3" data-intro="第三步介绍" data-position='right'>这里出现第三步引导</div>  
+
+</body>  
+</html>  

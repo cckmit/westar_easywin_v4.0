@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 注意：类型必须唯一,同一个类型下的字典数据代码必须唯一  -->
+<root>
+	<bgypfl flCode="A" flName="办公用品事务用品">
+		<bgypfl flCode="101" flName="文件档案管理类">
+			<bgypDetail bgypCode="1101" bgypName="有孔文件夹(两孔、三孔文件夹)" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1102" bgypName="无孔文件夹(单强力夹、双强力夹等)" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1103" bgypName="报告夹" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1104" bgypName="分类文件夹" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1105" bgypName="票据夹" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1106" bgypName="档案盒" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1107" bgypName="档案袋" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1108" bgypName="文件套" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1109" bgypName="名片盒/册" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1110" bgypName="资料架" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1111" bgypName="图纸夹" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="102" flName="桌面用品">
+			<bgypDetail bgypCode="1201" bgypName="订书机" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1202" bgypName="起钉器" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1203" bgypName="票夹" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1204" bgypName="胶水" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1205" bgypName="胶带" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1206" bgypName="计算器" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1207" bgypName="仪尺" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1208" bgypName="笔筒" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1209" bgypName="笔袋" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1210" bgypName="台历架" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="103" flName="办公本薄">
+			<bgypDetail bgypCode="1301" bgypName="无线装订本" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1302" bgypName="螺旋本" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1303" bgypName="皮面本" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1304" bgypName="活页本" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1305" bgypName="拍纸本" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1306" bgypName="便利贴" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1307" bgypName="便签纸/盒" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1308" bgypName="会议记录本" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="104" flName="书写修正用品">
+			<bgypDetail bgypCode="1401" bgypName="中性笔(签字笔)" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1402" bgypName="圆珠笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1403" bgypName="铅笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1404" bgypName="台笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1405" bgypName="荧光笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1406" bgypName="钢笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1407" bgypName="记号笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1408" bgypName="水彩笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1409" bgypName="POP笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1410" bgypName="橡皮" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1411" bgypName="修正液" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1412" bgypName="墨水笔芯" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1413" bgypName="软笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1414" bgypName="蜡笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1415" bgypName="毛笔" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="105" flName="财务用品">
+			<bgypDetail bgypCode="1501" bgypName="账本/账册" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1502" bgypName="无碳复写票据" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1503" bgypName="凭证/单据" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1504" bgypName="复写纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1505" bgypName="用友耗材" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1506" bgypName="票据装订机" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1507" bgypName="财务计算器" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1508" bgypName="号码机" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1509" bgypName="印台/印油" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1510" bgypName="支票夹" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1511" bgypName="专用印章" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1512" bgypName="印章箱" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1513" bgypName="手提金库" bgypUnit="个"></bgypDetail>
+			
+		</bgypfl>
+		<bgypfl flCode="106" flName="辅助用品">
+			<bgypDetail bgypCode="1601" bgypName="报刊架" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1602" bgypName="杂志架" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1603" bgypName="白板系列" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1604" bgypName="证件卡" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1605" bgypName="白板系列" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1606" bgypName="包装用品" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1607" bgypName="台座系列" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1608" bgypName="证书系列" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1609" bgypName="钥匙管理" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="107" flName="电脑周边用品">
+			<bgypDetail bgypCode="1701" bgypName="光盘" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1702" bgypName="U盘" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1703" bgypName="键盘" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1704" bgypName="鼠标" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="移动硬盘" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="录音笔" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="插线板" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="光盘" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="电池" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="耳麦" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="光驱" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="读卡器" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="1705" bgypName="存储卡" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="108" flName="电子电器用品">
+			<bgypDetail bgypCode="1801" bgypName="排插" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+	</bgypfl>
+	<bgypfl flCode="B" flName="办公耗材">
+		<bgypfl flCode="201" flName="打印耗材">
+			<bgypDetail bgypCode="2101" bgypName="硒鼓" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2102" bgypName="墨盒" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2103" bgypName="色带" bgypUnit="条"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="202" flName="装订耗材">
+			<bgypDetail bgypCode="2201" bgypName="装订夹条" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2202" bgypName="装订胶圈" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2203" bgypName="装订透片" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2204" bgypName="皮纹纸" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="203" flName="办公用纸">
+			<bgypDetail bgypCode="2301" bgypName="复印纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2302" bgypName="传真纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2303" bgypName="电脑打印纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2304" bgypName="彩色复印纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2305" bgypName="相片纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2306" bgypName="喷墨打印纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2307" bgypName="绘图纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2308" bgypName="不干胶打印纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2309" bgypName="其他纸张" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+		<bgypfl flCode="204" flName="IT耗材">
+			<bgypDetail bgypCode="2401" bgypName="网线" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2402" bgypName="水晶头" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2403" bgypName="网线转换接头" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2404" bgypName="视频线" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="2405" bgypName="电源线" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+	</bgypfl>
+	<bgypfl flCode="C" flName="日杂百货">
+		<bgypfl flCode="301" flName="日用品">
+			<bgypDetail bgypCode="3101" bgypName="生活用纸" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="3102" bgypName="办公茶" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="3103" bgypName="咖啡" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="3104" bgypName="纯净水" bgypUnit="个"></bgypDetail>
+			<bgypDetail bgypCode="3105" bgypName="方便食品" bgypUnit="个"></bgypDetail>
+		</bgypfl>
+	</bgypfl>
+	<bgypfl flCode="Z" flName="其他">
+		
+	</bgypfl>
+</root>

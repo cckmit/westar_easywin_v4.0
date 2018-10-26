@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 注意：类型必须唯一,同一个类型下的字典数据代码必须唯一  -->
+<root>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/am.gif"></imgPath>
+		<imgDescribe zvalue="[傲慢]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/baiy.gif"></imgPath>
+		<imgDescribe zvalue="[白眼]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/bs.gif"></imgPath>
+		<imgDescribe zvalue="[鄙视]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/ch.gif"></imgPath>
+		<imgDescribe zvalue="[擦汗]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/cy.gif"></imgPath>
+		<imgDescribe zvalue="[龇牙]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/db.gif"></imgPath>
+		<imgDescribe zvalue="[大兵]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/fd.gif"></imgPath>
+		<imgDescribe zvalue="[发呆]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/fendou.gif"></imgPath>
+		<imgDescribe zvalue="[奋斗]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/fn.gif"></imgPath>
+		<imgDescribe zvalue="[愤怒]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/gz.gif"></imgPath>
+		<imgDescribe zvalue="[鼓掌]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/hanx.gif"></imgPath>
+		<imgDescribe zvalue="[憨笑]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/huaix.gif"></imgPath>
+		<imgDescribe zvalue="[坏笑]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/hx.gif"></imgPath>
+		<imgDescribe zvalue="[害羞]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/jk.gif"></imgPath>
+		<imgDescribe zvalue="[惊恐]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/jy.gif"></imgPath>
+		<imgDescribe zvalue="[惊讶]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/kel.gif"></imgPath>
+		<imgDescribe zvalue="[可怜]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/ku.gif"></imgPath>
+		<imgDescribe zvalue="[酷]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/kun.gif"></imgPath>
+		<imgDescribe zvalue="[困]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/lengh.gif"></imgPath>
+		<imgDescribe zvalue="[冷汗]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/lh.gif"></imgPath>
+		<imgDescribe zvalue="[流汗]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/ll.gif"></imgPath>
+		<imgDescribe zvalue="[流泪]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/pz.gif"></imgPath>
+		<imgDescribe zvalue="[撇嘴]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/qiao.gif"></imgPath>
+		<imgDescribe zvalue="[敲打]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/se.gif"></imgPath>
+		<imgDescribe zvalue="[色]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/shuai.gif"></imgPath>
+		<imgDescribe zvalue="[衰]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/tp.gif"></imgPath>
+		<imgDescribe zvalue="[调皮]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/tx.gif"></imgPath>
+		<imgDescribe zvalue="[偷笑]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/wx.gif"></imgPath>
+		<imgDescribe zvalue="[微笑]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/yiw.gif"></imgPath>
+		<imgDescribe zvalue="[疑问]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/yun.gif"></imgPath>
+		<imgDescribe zvalue="[晕]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/yx.gif"></imgPath>
+		<imgDescribe zvalue="[阴险]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/zhenm.gif"></imgPath>
+		<imgDescribe zvalue="[折磨]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/zm.gif"></imgPath>
+		<imgDescribe zvalue="[咒骂]"></imgDescribe>
+	</BiaoQing>
+	<BiaoQing type="pic" zdescribe="图片属性">
+		<imgPath zvalue="/static/biaoQing/zt.gif"></imgPath>
+		<imgDescribe zvalue="[猪头]"></imgDescribe>
+	</BiaoQing>
+</root>

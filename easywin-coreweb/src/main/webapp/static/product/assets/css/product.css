@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*todo 发布任务*/
+.no-shadow{ box-shadow: none !important;}
+.task-left-text{ min-width: 90px;}
+.task-right-box{ min-height: 50px;}
+.bordered-radius{
+    border-radius: 5px;
+}
+.task-num{
+    display: inline-block;
+    padding: 6px 0px 0px 20px;
+}
+.ps-right-box{
+    min-height: 40px;
+    border-bottom: 0 !important;
+}
+.tickets-container .tickets-list .ticket-normal{
+    background-color:#fbfbfb ;
+    padding: 0px;
+    margin: 0px;
+}
+.tickets-bg{
+    background-color: #fbfbfb;
+}
+.tickets-pd{padding: 0px;}
+.task-height{line-height: 34px;}
+.inner{cursor: default;}
+.task-shrink-head{
+    border: 1px solid #e2e2e2;
+    padding: 15px 0px;
+    border-radius: 5px;
+}
+.task-shrink-icon{
+    font-size: 16px;
+    font-weight: bold;
+}
+.task-shrink-body{
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+.task-rel{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.task-rel li{
+    float: left;
+    width: 20%;
+    list-style-type: none;
+    text-align: center;
+}
+.task-rel li span{
+    display: inline-block;
+    width: 100%;
+    padding: 13px 0px;
+    border-top: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+}
+.task-rel li span.bordered-right{border-right: none;}
+
+/*todo 发布任务-详情*/
+.tab-normal{
+    padding: 15px 0px;
+}
+.taskDetails-left-text{ min-width: 70px;}
+
+.textarea-border{
+    min-height: 100px;
+    border: 1px solid #e2e2e2;
+}
+.tickets-container .tickets-list .ticket-item .task-person{
+    display: inline-block;
+    padding: 0px 15px 0px 0px;
+
+}
+.task-people{
+    width: 70%;
+}
+.task-people-add{
+    width: 10%;
+}
+.task-people-add i{
+    font-size: 21px;
+    color: #bababa;
+    padding: 6px 20px;
+}
+.task-table tr td{
+    padding: 10px 0px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.margin-bottom-0{margin-bottom: 0px;}
+
+/**可拖拽进度条样式**/
+.progress-drag{
+    position: relative;
+    width:300px;
+    margin: 8px 0px;
+}
+.progress-drag-bg{
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color:#f2f2f2;
+}
+.progress-drag-bar{
+    background: #2dc3e8;
+    width: 0;
+    height: 18px;
+    border-radius: 5px;
+}
+.progress-drag-btn{
+    width: 20px;
+    height: 27px;
+    border-radius: 5px;
+    position: absolute;
+    background:#fff;
+    left: 0px;
+    margin-left: -10px;
+    top:-5px;
+    cursor: pointer;
+    border:1px #ddd solid;
+    box-sizing:border-box;
+}
+.progress-drag-btn:hover{
+    border-color:#F7B824;
+}
+.progress-drag-text{
+    width: 10%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:tx="http://www.springframework.org/schema/tx"
+xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+    http://www.springframework.org/schema/tx 
+    http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd ">
+
+	<!-- 自动扫描组件 -->
+	<context:component-scan base-package="com.westar.core.dao" />
+
+	<!-- 配置数据源,采用druid数据源 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="driverClassName">
+			<value>${jdbc.driverClassName}</value>
+		</property>
+		<property name="url">
+			<value>${jdbc.url}</value>
+		</property>
+		<property name="username">
+			<value>${jdbc.username}</value>
+		</property>
+		<property name="password">
+			<value>${jdbc.password}</value>
+		</property>
+		<property name="initialSize">
+			<value>${druid.initialSize}</value>
+		</property>
+		<property name="minIdle">
+			<value>${druid.minIdle}</value>
+		</property>
+		<property name="maxActive">
+			<value>${druid.maxActive}</value>
+		</property>
+		<property name="maxWait">
+			<value>${druid.maxWait}</value>
+		</property>
+		<property name="timeBetweenEvictionRunsMillis">
+			<value>${druid.timeBetweenEvictionRunsMillis}</value>
+		</property>
+		<property name="minEvictableIdleTimeMillis">
+			<value>${druid.minEvictableIdleTimeMillis}</value>
+		</property>
+		<property name="validationQuery">
+			<value>${druid.validationQuery}</value>
+		</property>
+		<property name="testWhileIdle">
+			<value>${druid.testWhileIdle}</value>
+		</property>
+		<property name="testOnBorrow">
+			<value>${druid.testOnBorrow}</value>
+		</property>
+		<property name="testOnReturn">
+			<value>${druid.testOnReturn}</value>
+		</property>
+		<property name="poolPreparedStatements">
+			<value>${druid.poolPreparedStatements}</value>
+		</property>
+		<property name="maxPoolPreparedStatementPerConnectionSize">
+			<value>${druid.maxPoolPreparedStatementPerConnectionSize}</value>
+		</property>
+		
+		<!-- 解密密码必须要配置的项-->
+		<property name="filters" value="stat,config" /><!-- 开启druid监控支持(stat)，SQL防火墙(wall)以及SQL合并(mergeStat) -->
+		<property name="connectionProperties" value="druid.stat.slowSqlMillis=1000;config.decrypt=false" />
+		 
+	</bean>
+
+	<!-- 配置JdbcTemplate -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.OracleLobHandler" lazy-init="true" />
+	<bean id="defaultLobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />
+	
+    <!-- Druid AOP配置 -->
+    <bean id="druid-stat-interceptor"
+        class="com.alibaba.druid.support.spring.stat.DruidStatInterceptor">
+    </bean>
+    <bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut"
+        scope="prototype">
+        <property name="patterns">
+            <list>
+                <value>com.westar.core.service.*</value>
+                <value>com.westar.core.dao.*</value>
+            </list>
+        </property>
+    </bean>
+    <!-- 打开监控 -->
+    <aop:config>
+        <aop:advisor advice-ref="druid-stat-interceptor" pointcut-ref="druid-stat-pointcut" />
+    </aop:config>
+    <!-- 打开面向切面工具 -->
+    <aop:aspectj-autoproxy />
+	
+</beans>
+  
